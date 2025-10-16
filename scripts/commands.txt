@@ -1,0 +1,52 @@
+# 유용한 명령어 모음
+
+## Git 관련
+git init                                    # Git 저장소 초기화
+git add .                                   # 모든 파일 스테이징
+git commit -m "메시지"                      # 커밋 생성
+git status                                  # 상태 확인
+git log --oneline                           # 커밋 로그 보기
+git branch                                  # 브랜치 목록
+git checkout -b 새브랜치                    # 새 브랜치 생성 및 전환
+git merge 브랜치명                          # 브랜치 병합
+git push origin main                        # 원격 저장소에 푸시
+git pull origin main                        # 원격 저장소에서 풀
+
+## 파일 관리
+ls -la                                      # 파일 목록 (숨김파일 포함)
+pwd                                         # 현재 디렉토리 경로
+cd 디렉토리명                               # 디렉토리 이동
+mkdir 디렉토리명                            # 디렉토리 생성
+rm -rf 디렉토리명                           # 디렉토리 삭제
+cp 파일명 새파일명                          # 파일 복사
+mv 파일명 새파일명                          # 파일 이동/이름변경
+chmod 755 파일명                            # 파일 권한 변경
+
+## 텍스트 처리
+cat 파일명                                  # 파일 내용 출력
+head -n 10 파일명                           # 처음 10줄 출력
+tail -n 10 파일명                           # 마지막 10줄 출력
+grep "검색어" 파일명                        # 텍스트 검색
+wc -l 파일명                                # 줄 수 세기
+sort 파일명                                 # 파일 정렬
+uniq 파일명                                 # 중복 제거
+
+## 시스템 정보
+df -h                                       # 디스크 사용량
+free -h                                     # 메모리 사용량
+ps aux                                      # 실행 중인 프로세스
+top                                         # 실시간 시스템 모니터링
+whoami                                      # 현재 사용자
+date                                        # 현재 날짜/시간
+
+## 네트워크
+ping google.com                             # 네트워크 연결 테스트
+curl -I URL                                 # HTTP 헤더 확인
+wget URL                                    # 파일 다운로드
+ssh 사용자@서버                             # SSH 연결
+
+## 압축/해제
+tar -czf 압축파일.tar.gz 디렉토리           # 압축
+tar -xzf 압축파일.tar.gz                   # 해제
+zip -r 압축파일.zip 디렉토리                # ZIP 압축
+unzip 압축파일.zip                          # ZIP 해제
